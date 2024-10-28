@@ -6,7 +6,7 @@
 /*   By: rasoares <rasoares@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/08 14:11:57 by rasoares          #+#    #+#             */
-/*   Updated: 2024/05/21 11:09:53 by rasoares         ###   ########.fr       */
+/*   Updated: 2024/08/27 20:02:38 by rasoares         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,8 @@ static void	ft_convert(char str, va_list va, long int *len)
 
 int	ft_printf(const char *str, ...)
 {
-	long int	len;
-	va_list		va;
+	long int		len;
+	va_list			va;
 	unsigned int	i;
 
 	len = 0;

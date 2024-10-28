@@ -6,13 +6,13 @@
 /*   By: rasoares <rasoares@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/08 14:13:51 by rasoares          #+#    #+#             */
-/*   Updated: 2024/05/21 11:19:02 by rasoares         ###   ########.fr       */
+/*   Updated: 2024/08/27 20:03:20 by rasoares         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_printchar (int c, long int *len)
+void	ft_printchar(int c, long int *len)
 {
 	write(1, &c, 1);
 	(*len)++;
@@ -25,7 +25,7 @@ void	ft_printstr(char *str, long int *len)
 		ft_printstr("(null)", len);
 		return ;
 	}
-	while(*str)
+	while (*str)
 	{
 		ft_printchar(*str, len);
 		str++;
