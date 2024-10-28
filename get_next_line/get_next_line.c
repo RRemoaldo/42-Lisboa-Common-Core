@@ -6,7 +6,7 @@
 /*   By: rasoares <rasoares@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/22 11:57:22 by rasoares          #+#    #+#             */
-/*   Updated: 2024/10/28 15:28:27 by rasoares         ###   ########.fr       */
+/*   Updated: 2024/10/28 17:57:01 by rasoares         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*get_next_line(int fd)
 	int			i;
 
 	i = 0;
-	if (fd < 0 || BUFFER_SIZE < 1)
+	if (fd < 0 || BUFFER_SIZE < 1 || fd >= FOPEN_MAX)
 	{
 		while (buff[i])
 			buff[i++] = 0;
